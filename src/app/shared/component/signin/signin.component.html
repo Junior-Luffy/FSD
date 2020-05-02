@@ -1,0 +1,16 @@
+<div class="div-signin">
+  <form class="form-signin" #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)" novalidate>
+    <h1 class="h3 mb-3 font-weight-normal">sign in</h1>
+
+    <label for="inputUsername" class="">Username</label>
+    <input ngModel name="name" type="text" id="inputUsername" class="form-control" placeholder="UserName">
+
+    <label for="inputPassword">Password</label>
+    <input ngModel name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" >
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+    <button class="btn btn-lg btn-primary btn-block" type="button" (click)="toSignup()">Sign up</button>
+
+  </form>
+</div>
