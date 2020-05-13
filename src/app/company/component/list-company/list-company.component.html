@@ -1,16 +1,31 @@
-
-<div class="div-signin">
-  <form class="form-signin" novalidate>
-    <h1 class="h3 mb-3 font-weight-normal">sign in</h1>
-
-    <!-- bootstrap utilities/screenreaders   -->
-    <label for="inputUsername" class="">Username</label>
-    <input ngModel name="name" type="text" id="inputUsername" class="form-control" placeholder="UserName">
-
-    <label for="inputPassword">Password</label>
-    <input ngModel name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" >
-
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-  </form>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">company code</th>
+        <th scope="col">stock exchange</th>
+        <th scope="col">brief</th>
+        <th scope="col">operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>666</td>
+        <td>BSE</td>
+        <td>brief</td>
+        <td>
+          <button type="button" class="btn btn-primary">edit</button>
+        </td>
+      </tr>
+      <tr *ngFor="let company of companys; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ company.code }}</td>
+        <td>{{ company.stock }}</td>
+        <td>{{ company.brief }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </div>

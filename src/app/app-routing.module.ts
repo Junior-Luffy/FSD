@@ -14,6 +14,7 @@ import { CompanyCompareChartComponent } from './chart/component/company-compare-
 import { SectorCompareComponent } from './chart/component/sector-compare/sector-compare.component';
 import { SectorCompareChartComponent } from './chart/component/sector-compare-chart/sector-compare-chart.component';
 import { ChartComponent } from './chart/chart.component';
+import { UpdateProfilesComponent } from './user/component/update-profiles/update-profiles.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
     {
       path: 'profiles',
       component: ProfilesComponent
+    },
+    {
+      path: 'update-profiles',
+      component: UpdateProfilesComponent
     },
     {
       path: 'list-company',

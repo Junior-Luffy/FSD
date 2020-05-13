@@ -1,16 +1,42 @@
-
-<div class="div-signin">
-  <form class="form-signin" novalidate>
-    <h1 class="h3 mb-3 font-weight-normal">sign in</h1>
-
-    <!-- bootstrap utilities/screenreaders   -->
-    <label for="inputUsername" class="">Username</label>
-    <input ngModel name="name" type="text" id="inputUsername" class="form-control" placeholder="UserName">
-
-    <label for="inputPassword">Password</label>
-    <input ngModel name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" >
-
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-
-  </form>
+<div class="container">
+  <div class="card m-3">
+    <h5 class="card-header">Import Excel Data</h5>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="uploadedfile">Selcet Excel file to be uploaded:</label>
+          <input type="file" class="form-control-file" id="uploadedfile">
+          <a>
+            <u>click here to download template</u>
+          </a>
+        </div>
+        <button type="submit" class="btn btn-primary">upload</button>
+      </form>
+    </div>
+  </div>
+  <div class="card m-3">
+    <h5 class="card-header">Summary of Upload</h5>
+    <div class="card-body">
+      <div>
+        <label>Company Name:</label>
+        <label>Email</label>
+      </div>
+      <div>
+        <label>Stock Exchange:</label>
+        <label>Stock Exchange</label>
+      </div>
+      <div>
+        <label>Import Number:</label>
+        <label>Import Number</label>
+      </div>
+      <div>
+        <label>From Date:</label>
+        <label>From Date</label>
+      </div>
+      <div>
+        <label>To Date:</label>
+        <label>To Date</label>
+      </div>
+    </div>
+  </div>
 </div>

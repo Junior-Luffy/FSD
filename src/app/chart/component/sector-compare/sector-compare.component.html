@@ -1,3 +1,53 @@
-<p>
-  sector-compare works!
-</p>
+<div class="container">
+  <div class="card m-3 shadow">
+    <h5 class="card-header">Compare Sector</h5>
+    <div class="card-body">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="sector">Sector</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Sector" aria-label="Sector" aria-describedby="sector">
+        </div>
+        <button type="button" class="btn btn-primary mb-3">add sector</button>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="stockexchange">Stock Exchange</label>
+          </div>
+          <select class="custom-select" id="stockexchange">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="fromperiod">from period</span>
+              </div>
+              <input type="text" class="form-control" placeholder="from period" aria-label="from period" aria-describedby="fromperiod">
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="toperiod">to period</span>
+              </div>
+              <input type="text" class="form-control" placeholder="to period" aria-label="to period" aria-describedby="toperiod">
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="specifyperiodcity">specify periodcity</span>
+          </div>
+          <input type="text" class="form-control" placeholder="specify periodcity" aria-label="specify periodcity" aria-describedby="specifyperiodcity">
+        </div>
+        <button type="submit" class="btn btn-primary mb-3">generate chart</button>
+      </form>
+    </div>
+  </div>
+</div>
+

@@ -5,13 +5,15 @@ import { SignupComponent } from './component/signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
    imports: [
       CommonModule,
       FormsModule,
       ReactiveFormsModule,
-      AppRoutingModule
+      AppRoutingModule,
+      NgbModule
    ],
    declarations: [
       SigninComponent,
